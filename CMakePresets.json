@@ -1,0 +1,40 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 24,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "clion-debug",
+      "displayName": "CLion Debug",
+      "description": "Generator-agnostic debug build for CLion's selected Windows toolchain",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "clion-release",
+      "displayName": "CLion Release",
+      "description": "Generator-agnostic release build for CLion's selected Windows toolchain",
+      "generator": "Ninja",
+      "binaryDir": "${sourceDir}/cmake-build-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "clion-debug",
+      "configurePreset": "clion-debug"
+    },
+    {
+      "name": "clion-release",
+      "configurePreset": "clion-release"
+    }
+  ]
+}

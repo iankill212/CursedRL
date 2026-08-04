@@ -1,0 +1,8 @@
+/build/
+/cmake-build-*/
+/.idea/
+/CursedRL-Testing/
+/assets/*_chroma.png
+*.exe
+*.dll
+*.a
