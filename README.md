@@ -1,4 +1,6 @@
+
 # CursedRL: Tower of Malevolent Divinity
+<img width="1900" height="1011" alt="gameCursedRL" src="https://github.com/user-attachments/assets/8767d51c-75e4-46ca-87de-20bbbcaa28fb" />
 
 A small traditional roguelike foundation for Windows and CLion, written in
 C++20 and rendered with Dear ImGui. It includes a connected grid dungeon,
